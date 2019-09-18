@@ -1,5 +1,5 @@
 resource "aws_kms_key" "kms_key" {
-  description             = "${module.label.id}${module.label.delimiter}kms${module.label.delimiter}key"
+  description = "${module.label.id}${module.label.delimiter}kms${module.label.delimiter}key"
 }
 
 resource "aws_backup_vault" "vault" {
@@ -16,7 +16,7 @@ resource "aws_backup_plan" "plan" {
     schedule          = "cron(0 0 * * ? *)"
 
     lifecycle {
-//      5 weeks * 7 days = 35 days
+      //      5 weeks * 7 days = 35 days
       delete_after = 35
     }
   }
@@ -27,7 +27,7 @@ resource "aws_backup_plan" "plan" {
     schedule          = "cron(0 0 ? * 1 *)"
 
     lifecycle {
-//      3 months * 30 days = 90 days
+      //      3 months * 30 days = 90 days
       delete_after = 90
     }
   }
@@ -38,9 +38,9 @@ resource "aws_backup_plan" "plan" {
     schedule          = "cron(0 0 1 * ? *)"
 
     lifecycle {
-//      3 months * 30 days = 90 days
+      //      3 months * 30 days = 90 days
       cold_storage_after = 90
-//      2 years * 365 days = 730 days
+      //      2 years * 365 days = 730 days
       delete_after = 730
     }
   }
