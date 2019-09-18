@@ -8,6 +8,14 @@ Terraform module designed to easily backup resources using AWS Backup.
 Plans determine when to make a backup and for how long this backup should be retained.
 The backups are securely stored in a seperate vault and encrypted with a KMS key.
 
+By default, the following rules are defined:
+
+| When | To cold storage after (days) | Deleted after (days)
+|----|----|-----|
+| Daily at 0:00 | - | 35 |
+| Weekly at Sunday 0:00 | - | 90 |
+| Monthly at first day of month 0:00 | 90 | 730 |
+
 It's 100% Open Source and licensed under the [MIT](LICENSE).
 
 
