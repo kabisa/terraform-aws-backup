@@ -1,9 +1,13 @@
-#  Local .terraform directories
-**/.terraform/*
-
-# .tfstate files
-*.tfstate
-*.tfstate.*
-
-# .tfvars files
+keys/*
+!keys/.gitkeep
+*.info
+/tmp/
+*tfstate*
+secrets.tfvars
 *.tfvars
+.terraform
+.idea
+*.iml
+
+.build-harness
+build-harness
