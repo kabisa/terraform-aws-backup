@@ -90,7 +90,7 @@ Are you using this project or any of our other projects? Consider sharing this p
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/kabisa/terraform-aws-backup/issues), or send us an [contact][contact].
+File a GitHub [issue](https://github.com/kabisa/terraform-aws-backup/issues), or send us an [email][contact].
 
 
 ## Support
@@ -111,7 +111,7 @@ Please use the [issue tracker](https://github.com/kabisa/terraform-aws-backup/is
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [contact][contact].
+If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [email][contact].
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -149,13 +149,14 @@ This project is maintained and funded by [Kabisa B.V][website]. Like it? Please 
 
 
   [logo]: https://images.ctfassets.net/ede0ajjyowtx/uvtReubsCYyNXqiKaO4Fg/180842b35ff3d0d57836cf7083fb2328/kabisa_logo_two_color.svg
+  [website]: https://kabisa.nl
   [build_status_img]: https://travis-ci.org/kabisa/terraform-aws-backup.svg?branch=master
-  [build_status_link]: https://travis-ci.org/kabisa/terraform-aws-backup
+  [build_status_link]: https://travis-ci.com/kabisa/terraform-aws-backup
   [release_img]: https://img.shields.io/github/v/release/kabisa/terraform-aws-backup?sort=semver
   [release_url]: https://github.com/kabisa/terraform-aws-backup/releases/latest
-  [terraform_version_logo]: https://img.shields.io/static/v1?label=Terraform%20version&message=v0.12.8&color=5C4EE5&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAMAAADCMPhoAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAltQTFRFX0PpX0PpX0PpAAAAX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PoR0C+QECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PoR0C9QECyQECyQECyX0PpX0PpX0PpX0PpXkPoRkC9QECyQECyX0PpX0PpX0PpX0PpX0PpXkPoRkC9QECyX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyX0PpX0PpX0PpQECyQECyQECyX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpXkPoRkC9QECyQECyQECyX0PpX0PpX0PpX0PpXkPnRkC9QECyQECyX0PpX0PpWULfQ0C4X0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpEc+yhgAAAMl0Uk5TTR0FALjDdCIDyPHlu3Yu9//fok8TAezCi04L++q/cgwIAAMM+csfVSgJARE9WvrRKY1UIytirbby1IpHHgALJVaZ3fbB+P2HPhIEG0ia5f/1ymkZCAEKKozc+27a/vC3Tg5qzPcadc/zwUDh/gIRN3n8ykTqBxtSpw8wYZsNL1HE9bUK0PbwuWdchab87MiRShMQhoSv2PHNllQWydaOZXzp+t6qF2ia171C2Mtp9L1kRHIxbyLvuQQCusbFHKDZcbzmO+08lC1rS/7iJQAAAbtJREFUeJxjYGBkYsYHGFhY2dg58Cng5OLm4eXDbQoDJ78Av6CQsIgoHgUCAmLiEpJS+BQISMvIyskrYJiiqKQMVSAgoKKqpq6hiapES1tHF65AT9+AxdDIWAFJWtnE1MwcWYGqhaWVtY2CLUTazt7B0cnZBUWBq4CbpbuHJ8geL28fXz9/f6AC2QBkBUC3BAYFh4SGhUdERvmDFUTHqMQiKxCIjYtPSExKTvH3hyhQSE1Ld0VWIBCbkZmVHZUDU8Ccm5dfEFiIpEDAtai4xN8froDZtrSsvEIMjwJmZtHKquoaHjwKgEpq6+rLGvgxFDQ2McDCTbS0uaClFVVBTlt7B1wBUEVnV7e+BUJBT29f/4SJSAomVUyOnjJ1WgBUwfQZM2fNBkY3koI5GXPnzV/AspAfqGDR4iW6S7WY0RQA40J8Wf3yFStXrV6z1lsLkmBQFQgIrFu/YeOmzVu2esFSFLoCgdht28t37NRSxKlAINZilzwiZWFRIOC6u5ZGCir3EFCgsAAWF9gV2Irunb9vvytuBSBDGA8cPKSCRwEzc+lhK84j/HgUMDNLHT0WswufAmZmheMnmhEKAKMnrgvDKLJtAAAAAElFTkSuQmCC
+  [terraform_version_logo]: https://img.shields.io/static/v1?label=Terraform%20version&message=v0.12.9&color=5C4EE5&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAMAAADCMPhoAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAltQTFRFX0PpX0PpX0PpAAAAX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PoR0C+QECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PoR0C9QECyQECyQECyX0PpX0PpX0PpX0PpXkPoRkC9QECyQECyX0PpX0PpX0PpX0PpX0PpXkPoRkC9QECyX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyX0PpX0PpX0PpQECyQECyQECyX0PpX0PpX0PpQECyQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyQECyX0PpX0PpX0PpX0PpX0PpX0PpQECyQECyQECyQECyX0PpX0PpX0PpXkPoRkC9QECyQECyQECyX0PpX0PpX0PpX0PpXkPnRkC9QECyQECyX0PpX0PpWULfQ0C4X0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpX0PpEc+yhgAAAMl0Uk5TTR0FALjDdCIDyPHlu3Yu9//fok8TAezCi04L++q/cgwIAAMM+csfVSgJARE9WvrRKY1UIytirbby1IpHHgALJVaZ3fbB+P2HPhIEG0ia5f/1ymkZCAEKKozc+27a/vC3Tg5qzPcadc/zwUDh/gIRN3n8ykTqBxtSpw8wYZsNL1HE9bUK0PbwuWdchab87MiRShMQhoSv2PHNllQWydaOZXzp+t6qF2ia171C2Mtp9L1kRHIxbyLvuQQCusbFHKDZcbzmO+08lC1rS/7iJQAAAbtJREFUeJxjYGBkYsYHGFhY2dg58Cng5OLm4eXDbQoDJ78Av6CQsIgoHgUCAmLiEpJS+BQISMvIyskrYJiiqKQMVSAgoKKqpq6hiapES1tHF65AT9+AxdDIWAFJWtnE1MwcWYGqhaWVtY2CLUTazt7B0cnZBUWBq4CbpbuHJ8geL28fXz9/f6AC2QBkBUC3BAYFh4SGhUdERvmDFUTHqMQiKxCIjYtPSExKTvH3hyhQSE1Ld0VWIBCbkZmVHZUDU8Ccm5dfEFiIpEDAtai4xN8froDZtrSsvEIMjwJmZtHKquoaHjwKgEpq6+rLGvgxFDQ2McDCTbS0uaClFVVBTlt7B1wBUEVnV7e+BUJBT29f/4SJSAomVUyOnjJ1WgBUwfQZM2fNBkY3koI5GXPnzV/AspAfqGDR4iW6S7WY0RQA40J8Wf3yFStXrV6z1lsLkmBQFQgIrFu/YeOmzVu2esFSFLoCgdht28t37NRSxKlAINZilzwiZWFRIOC6u5ZGCir3EFCgsAAWF9gV2Irunb9vvytuBSBDGA8cPKSCRwEzc+lhK84j/HgUMDNLHT0WswufAmZmheMnmhEKAKMnrgvDKLJtAAAAAElFTkSuQmCC
   [terraform_version_url]: https://github.com/hashicorp/terraform/blob/master/CHANGELOG.md#0129-september-17-2019
-  [terraform_registry_url]: https://registry.terraform.io/modules/kabisa/backup/aws/0.1.0
+  [terraform_registry_url]: https://registry.terraform.io/modules/kabisa/backup/aws
   [contact]: https://www.kabisa.nl/contact/
   [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-efs-backup&url=https://github.com/kabisa/terraform-aws-backup
   [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-efs-backup&url=https://github.com/kabisa/terraform-aws-backup
