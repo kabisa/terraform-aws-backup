@@ -1,8 +1,4 @@
 # General
-variable "region" {
-  default = "eu-west-1"
-}
-
 variable "backup_resource_ids" {
   type = "list"
 }
