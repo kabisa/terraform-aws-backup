@@ -1,6 +1,6 @@
 # General
 variable "backup_resource_ids" {
-  type = "list"
+  type        = "list"
   description = "List of resource id's or ARNs you would like to include in the backup"
 }
 
