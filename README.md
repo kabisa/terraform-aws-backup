@@ -158,7 +158,7 @@ This project is maintained and funded by [Kabisa B.V][website]. Like it? Please 
 
   [logo]: https://images.ctfassets.net/ede0ajjyowtx/uvtReubsCYyNXqiKaO4Fg/180842b35ff3d0d57836cf7083fb2328/kabisa_logo_two_color.svg
   [website]: https://kabisa.nl
-  [build_status_img]: https://travis-ci.org/kabisa/terraform-aws-backup.svg?branch=master
+  [build_status_img]: https://api.travis-ci.com/kabisa/terraform-aws-backup.svg?branch=master
   [build_status_link]: https://travis-ci.com/kabisa/terraform-aws-backup
   [release_img]: https://img.shields.io/github/v/release/kabisa/terraform-aws-backup?sort=semver
   [release_url]: https://github.com/kabisa/terraform-aws-backup/releases/latest
