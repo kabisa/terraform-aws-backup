@@ -168,8 +168,9 @@ This project is maintained and funded by [Kabisa B.V][website]. Like it? Please 
   [theguild_slack_url]: https://theguildslacking.herokuapp.com/
   [terraform_registry_url]: https://registry.terraform.io/modules/kabisa/backup/aws
   [contact]: https://www.kabisa.nl/contact/
-  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-efs-backup&url=https://github.com/kabisa/terraform-aws-backup
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-efs-backup&url=https://github.com/kabisa/terraform-aws-backup
+  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-backup&url=https://github.com/kabisa/terraform-aws-backup
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-backup&url=https://github.com/kabisa/terraform-aws-backup
   [share_reddit]: https://reddit.com/submit/?url=https://github.com/kabisa/terraform-aws-backup
   [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/kabisa/terraform-aws-backup
-  [share_email]: mailto:?subject=terraform-aws-efs-backup&body=https://github.com/kabisa/terraform-aws-backup
+  [share_email]: mailto:?subject=terraform-aws
+  -backup&body=https://github.com/kabisa/terraform-aws-backup
