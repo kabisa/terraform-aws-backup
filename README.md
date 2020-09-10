@@ -31,6 +31,15 @@ module "backup" {
   #Use the latest version from the Terraform Registry
   version = "0.1.0"
 
+  daily_cron = "cron(0 0 * * ? *)" # optional
+  daily_delete_after = 35 # optional
+
+  weekly_cron = "cron(0 0 ? * 1 *)" # optional
+  weekly_delete_after = 90 # optional
+
+  monthly_cron = "cron(0 0 1 * ? *)" # optional
+  monthly_delete_after = 730 # optional
+  monthly_cold_storage_after = 90 # optional
 
   namespace = "my_company"
   name = "my_project_name"
@@ -39,16 +48,13 @@ module "backup" {
     My_custom_tag_1: "my_custom_value_1"
     My_custom_tag_2: "my_custom_value_2"
   }
-  
+
   backup_resource_ids = [
     "arn_of_my_resource_1",
     "arn_of_my_resource_2"
   ]
 }
 ```
-
-
-
 
 ## Makefile Targets
 ```
@@ -82,11 +88,11 @@ Available targets:
 
 
 
-## Share the Love 
+## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/kabisa/terraform-aws-backup)! (it helps us **a lot**) 
+Like this project? Please give it a ★ on [our GitHub](https://github.com/kabisa/terraform-aws-backup)! (it helps us **a lot**)
 
-Are you using this project or any of our other projects? Consider sharing this project: 
+Are you using this project or any of our other projects? Consider sharing this project:
 [<img align="right" title="Share via Email" src="https://images.ctfassets.net/ede0ajjyowtx/6FgtYsQxQy42f81BV5NVLb/86ada33c42037504add9c7f668434217/ios-email.svg"/>][share_email]
 [<img align="right" title="Share on Twitter" src="https://images.ctfassets.net/ede0ajjyowtx/6d5a5dtEB77S4I1jXaZI2u/2a84b54a7b351a061e0bd5826052aaa6/social-twitter.svg" />][share_twitter]
 [<img align="right" title="Share on LinkedIn" src="https://images.ctfassets.net/ede0ajjyowtx/4YEBKx16jYGABWjhBmO0x3/d4384b9e3088d39ca6bd4b5d8ba8f6a0/social-linkedin.svg" />][share_linkedin]
@@ -138,9 +144,9 @@ Copyright © 2019 [Kabisa B.V][website]
 
 
 
-## License 
+## License
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 See [LICENSE](LICENSE) for full details.
 
