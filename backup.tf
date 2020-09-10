@@ -1,17 +1,17 @@
 resource "aws_kms_key" "kms_key" {
-  description = "${module.label.id}${module.label.delimiter}kms${module.label.delimiter}key"
+  description = "${var.name}-key"
 }
 
 resource "aws_backup_vault" "vault" {
-  name        = "${module.label.id}${module.label.delimiter}backup${module.label.delimiter}vault"
+  name        = "${var.name}-vault"
   kms_key_arn = aws_kms_key.kms_key.arn
 }
 
 resource "aws_backup_plan" "plan" {
-  name = "${module.label.id}${module.label.delimiter}backup${module.label.delimiter}plan"
+  name = "${var.name}-plan"
 
   rule {
-    rule_name         = "${module.label.id}${module.label.delimiter}daily${module.label.delimiter}rule"
+    rule_name         = "${var.name}-daily"
     target_vault_name = aws_backup_vault.vault.name
     schedule          = var.daily_cron
 
@@ -22,7 +22,7 @@ resource "aws_backup_plan" "plan" {
   }
 
   rule {
-    rule_name         = "${module.label.id}${module.label.delimiter}weekly${module.label.delimiter}rule"
+    rule_name         = "${var.name}-weekly"
     target_vault_name = aws_backup_vault.vault.name
     schedule          = var.weekly_cron
 
@@ -33,7 +33,7 @@ resource "aws_backup_plan" "plan" {
   }
 
   rule {
-    rule_name         = "${module.label.id}${module.label.delimiter}monthly${module.label.delimiter}rule"
+    rule_name         = "${var.name}-monthly"
     target_vault_name = aws_backup_vault.vault.name
     schedule          = var.monthly_cron
 
@@ -49,7 +49,7 @@ resource "aws_backup_plan" "plan" {
 
 resource "aws_backup_selection" "arn_resource_selection" {
   iam_role_arn = aws_iam_role.aws_backup_role.arn
-  name         = "${module.label.id}${module.label.delimiter}arn${module.label.delimiter}resource${module.label.delimiter}selection"
+  name         = "${var.name}-resources"
   plan_id      = aws_backup_plan.plan.id
 
   resources = var.backup_resource_ids

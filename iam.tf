@@ -1,5 +1,5 @@
 resource "aws_iam_role" "aws_backup_role" {
-  name               = "${module.label.id}${module.label.delimiter}backup${module.label.delimiter}role"
+  name               = "${var.name}-backup-role"
   assume_role_policy = <<POLICY
 {
   "Version": "2012-10-17",
@@ -14,7 +14,6 @@ resource "aws_iam_role" "aws_backup_role" {
   ]
 }
 POLICY
-  tags               = module.label.tags
 }
 
 resource "aws_iam_role_policy_attachment" "aws_backup_policy" {
