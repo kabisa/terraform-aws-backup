@@ -13,35 +13,36 @@ resource "aws_backup_plan" "plan" {
   rule {
     rule_name         = "${module.label.id}${module.label.delimiter}daily${module.label.delimiter}rule"
     target_vault_name = aws_backup_vault.vault.name
-    schedule          = "cron(0 0 * * ? *)"
+    schedule          = var.daily_cron
 
     lifecycle {
-      //      5 weeks * 7 days = 35 days
-      delete_after = 35
+      // default = 5 weeks * 7 days = 35 days
+      delete_after = var.daily_delete_after
     }
   }
 
   rule {
     rule_name         = "${module.label.id}${module.label.delimiter}weekly${module.label.delimiter}rule"
     target_vault_name = aws_backup_vault.vault.name
-    schedule          = "cron(0 0 ? * 1 *)"
+    schedule          = var.weekly_cron
 
     lifecycle {
-      //      3 months * 30 days = 90 days
-      delete_after = 90
+      // default = 3 months * 30 days = 90 days
+      delete_after = var.weekly_delete_after
     }
   }
 
   rule {
     rule_name         = "${module.label.id}${module.label.delimiter}monthly${module.label.delimiter}rule"
     target_vault_name = aws_backup_vault.vault.name
-    schedule          = "cron(0 0 1 * ? *)"
+    schedule          = var.monthly_cron
 
     lifecycle {
-      //      3 months * 30 days = 90 days
-      cold_storage_after = 90
-      //      2 years * 365 days = 730 days
-      delete_after = 730
+      // default = 3 months * 30 days = 90 days
+      cold_storage_after = var.monthly_cold_storage_after
+
+      // default = 2 years * 365 days = 730 days
+      delete_after = var.monthly_delete_after
     }
   }
 }
