@@ -5,7 +5,7 @@ variable "backup_resource_ids" {
 }
 
 variable "name" {
-  type        = "string"
+  type        = string
   default     = ""
   description = "Solution name, e.g. 'app' or 'jenkins'"
 }
